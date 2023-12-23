@@ -8,7 +8,7 @@ export default function Bollywood() {
   const blogDataLeft = (item, index) => {
     if (index < 7) {
       return (
-        <div className='blogLeft'>
+        <div className='blogLeft' key={index+50}>
           <img className='blogImgLeft' src={item.img} alt='not found' />
           <div className='info'>
             <h2><NavLink to={`/blog/${item.id}`}>{item.title}</NavLink></h2>
@@ -23,7 +23,7 @@ export default function Bollywood() {
   const blogDataTop = (item, index) => {
     if (index === 7) {
       return (
-        <div className='blogTop'>
+        <div className='blogTop' key={index+550}>
           <img className='blogImgTop' src={item.img} alt='not found' />
           <div className='info'>
             <h3><NavLink to={`/blog/${item.id}`}>{item.title}</NavLink></h3>
@@ -38,7 +38,7 @@ export default function Bollywood() {
   const blogDataRight = (item, index) => {
     if (index > 7) {
       return (
-        <div className='blogRight'>
+        <div className='blogRight' key={index+450}>
           <img className='blogImgRight' src={item.img} alt='not found' />
           <div className='info'>
             <h4><NavLink to={`/blog/${item.id}`}>{item.title}</NavLink></h4>
@@ -63,7 +63,7 @@ export default function Bollywood() {
           <h1>Top Post</h1>
           {data.filter((item) => item.cat === "bollywood").map(blogDataTop)}
           {data.filter((item) => item.cat === 'bollywood').map(blogDataRight)}
-          <div className='add'></div>
+          <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQPf7HLQXXL0q2IC82VGrwGQwdF2rxQllI8-wcWoaChq2ZaYx_Bh3kjW7h8XLDHEUaeKU&usqp=CAU' className='add' alt='not found'/>
         </div>
 
       </div>

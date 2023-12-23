@@ -63,7 +63,7 @@ export default function Bollywood() {
           <h1>Top Post</h1>
           {data.filter((item) => item.cat === "fitness").map(blogDataTop)}
           {data.filter((item) => item.cat === 'fitness').map(blogDataRight)}
-          <div className='add'></div>
+          <img src='https://d1csarkz8obe9u.cloudfront.net/posterpreviews/new-year-gym-offer-2022-template-design-8f21d7d82e5668beb913419da3feedce.jpg?ts=1698325682' className='add' alt='not found'></img>
         </div>
 
       </div>

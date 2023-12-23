@@ -31,6 +31,7 @@
 .poster img{
   height: 100%;
   width: 100%;
+  border-radius: 10px;
 }
 .img1 {
   grid-column: 1/2;
@@ -70,65 +71,31 @@
   height: 400px;
   display: flex;
   flex-wrap: wrap;
+  padding: 8px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .section1 img{
   width: 100%;
   height: 39vh;
 }
-.home{
-  padding: 0 5px 5px 10px;
-}
  /* ---- || LATEST ARTICLES || ---- */
 .latestArticles {
-  border: 1px solid;
-  width: 90%;
-  height: 920px;
+  width: 95%;
   margin: auto;
   display: flex;
-  gap: 100px;
+  gap: 30px;
   justify-content: space-between;
 }
-
-.section2 {
-  width: 50vw;
-}
-
-.add {
+.mainAdd {
+  /* border: 1px solid; */
   width: 100%;
-  height: 500px;
+  height: 460px;
 }
-
-.homePageLeft {
-  /* border: 1px solid rgb(0, 255, 13); */
-  margin-top: 30px;
-}
-
 .homeRight {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 50px;
-  /* border: 2px solid black; */
 }
-
-.homePost {
-  /* border: 1px solid red; */
-  width: 100%;
-  height: 280px;
-}
-
-.mainTopPost {
-  margin: 0;
-}
-
-
-
-
-
-
-
-
 /* ====================================== */
 nav {
   /* border: 1px solid; */
@@ -272,9 +239,8 @@ h3{
 
 /* --------------------- ADD ------------------- */
 .add {
-  border: 1px solid;
-  width: 92%;
-  min-height: 100vh;
+  width: 100%;
+  height: 34em;
 }
 
 /* --------------------- Read Blog ------------------- */
@@ -335,6 +301,7 @@ h3{
   margin: 40px 45%;
   border-radius: 5px;
 }
+.readBtn:hover{ cursor: pointer; }
 .readBlogLogo {
   display: flex;
   gap: 10px;
@@ -366,6 +333,7 @@ h3{
   justify-content: space-around;
   align-items: center;
 }
+.footer h3{ height: auto; }
 .footerImg {
   border-radius: 20px;
 }
@@ -419,10 +387,20 @@ h3{
   color: #000;
 }
 
+@media screen and (max-width:800px) {
+  .readBlog {width: 56vw;}
+}
 @media screen and (max-width:500px) {
-  .main{
+  .main,.theLatest,.latestArticles {
     flex-direction: column;
   }
+  .section1{
+    width: 100%;
+  }
+  h3{
+    height: 40px;
+  }
+  
   .blogLeftCont,.blogRightCont{
     width: auto;
   }
@@ -432,5 +410,23 @@ h3{
   .add{
     display: none;
   }
+  .blogLeft .info,.blogRight .info {
+    width: 100%;
+  }
+  .info h4{
+    width: 100%;
+  }
+  .readBlog{
+    width: 90%;
+  }
+  .mainAdd,.share{
+    display: none;
+  }
+  .readBtn{
+    width: 5em;
+    margin: 10% 42%;
+  }
+  .routes,.add1,.add2,.social{
+    text-align: center;
+  }
 }
-/* 8617697957 - 880 */

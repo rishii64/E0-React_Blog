@@ -63,7 +63,7 @@ export default function Bollywood() {
           <h1>Top Post</h1>
           {data.filter((item) => item.cat === "technology").map(blogDataTop)}
           {data.filter((item) => item.cat === 'technology').map(blogDataRight)}
-          <div className='add'></div>
+          <img className='add' src='https://images.pexels.com/photos/18690123/pexels-photo-18690123/free-photo-of-portrait-of-pregnant-woman-in-black-and-white.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' alt='not found'></img>
         </div>
 
       </div>
