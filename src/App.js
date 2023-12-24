@@ -1,10 +1,13 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import RouteCompo from './Components/RouteCompo'
 
 function App() {
   return (
     <div className="App">
-      <RouteCompo/>
+      <BrowserRouter>
+        <RouteCompo />
+      </BrowserRouter>
     </div>
   );
 }

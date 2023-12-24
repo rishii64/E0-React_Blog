@@ -23,7 +23,7 @@ export default function Home() {
         <div className='left section1'>
           <img className='homeLatest' src={data[2].img} alt='not found' />
           <div className='info'>
-            <h3 className='titleLink'><Link to={`/Blog/${data[2].id}`}>{data[2].title}</Link></h3>
+            <h3><Link to={`/Blog/${data[2].id}`}>{data[2].title}</Link></h3>
             <p className='des'>{data[2].desc.slice(0, 80)}....</p>
             <p className='stamp'>Bollywood : 17-10-23</p>
           </div>
